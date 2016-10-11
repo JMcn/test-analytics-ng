@@ -9,4 +9,5 @@ WORKDIR /root
 
 EXPOSE 80 8080
 
-RUN mvn appengine:devserver
+RUN mvn compile
+RUN mvn package
