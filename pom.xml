@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -9,13 +10,6 @@
   <packaging>war</packaging>
 
   <name>test-analytics</name>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>has gwt-dnd 3.1.1</id>
-      <url>http://gwtquery-plugins.googlecode.com/svn/mavenrepo</url>
-    </pluginRepository>
-  </pluginRepositories>
 
   <dependencies>
     <dependency>
@@ -105,7 +99,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-	<version>2.16</version>
+  <version>2.16</version>
         <configuration>
           <excludes>
             <exclude>**/client/**/*.java</exclude>
@@ -213,9 +207,9 @@
             <version>10.0-rc1</version>
           </dependency>
           <dependency>
-            <groupId>com.google.code.gwt-dnd</groupId>
+            <groupId>com.allen-sauer.gwt.dnd</groupId>
             <artifactId>gwt-dnd</artifactId>
-            <version>3.1.1</version>
+            <version>3.1.2</version>
           </dependency>
           <dependency>
             <groupId>com.google.appengine</groupId>
