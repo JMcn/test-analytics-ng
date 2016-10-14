@@ -9,4 +9,4 @@ WORKDIR /root
 
 EXPOSE 80 8080
 
-RUN mvn appengine:devserver
+ENTRYPOINT ["/docker-entrypoint.sh"]
