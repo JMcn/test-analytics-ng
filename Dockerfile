@@ -10,10 +10,10 @@ RUN chmod +x /docker-entrypoint.sh
 
 WORKDIR /root
 
-mvn compile
-
-mvn package
-
 EXPOSE 80 8080
+
+RUN mvn compile
+
+RUN mvn package
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
