@@ -4,6 +4,8 @@ MAINTAINER JMcn <411164348@qq.com>
 
 ADD pom.xml /root/pom.xml
 ADD src /root/src
+COPY docker-entrypoint.sh /
+RUN chmod +x /docker-entrypoint.sh
 
 WORKDIR /root
 
